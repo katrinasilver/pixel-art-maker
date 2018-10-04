@@ -1,0 +1,32 @@
+body {
+    background-color: #e6e6e6;
+    height: 100vh;
+    line-height: 0;
+}
+
+.palette {
+    display: block;
+    line-height: 2.75rem;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+.canvas {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tiles {
+    display: inline-block;
+    min-height: 10px;
+    margin: 0;
+    min-width: 10px;
+}
+
+.swatch {
+    margin-bottom: 1rem;
+}
+
+.button {
+    margin-left: 1rem;
+}
