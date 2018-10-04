@@ -19,8 +19,8 @@ body {
 .tiles {
     display: inline-block;
     min-height: 10px;
-    margin: 0;
     min-width: 10px;
+    margin: 0;
 }
 
 .swatch {
