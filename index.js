@@ -1,6 +1,5 @@
 for (let i = 0; i < 7236; i++) {
     const canvas = document.querySelector('.container');
-    const square = document.querySelector('.tiles');
     const swatch = document.querySelector('.swatch')
     const reset = document.querySelector('.reset');
     const box = document.createElement('div');
