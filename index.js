@@ -9,6 +9,6 @@ for (let i = 0; i < 7236; i++) {
         e.preventDefault() // hijack the mouse drag
         box.addEventListener('mouseover', coloR)
     });
-    canvas.addEventListener('mouseup', (e) => box.removeEventListener('mouseover', coloR));
+    canvas.addEventListener('mouseup', () => box.removeEventListener('mouseover', coloR));
     document.querySelector('.reset').addEventListener('click', reseT);
 }
