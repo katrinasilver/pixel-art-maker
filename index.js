@@ -1,27 +1,11 @@
 for (let i = 0; i < 7236; i++) {
     const canvas = document.querySelector('.container');
-    const swatch = document.querySelector('.swatch')
-    const reset = document.querySelector('.reset');
     const box = document.createElement('div');
-
-    // create grid
-    box.className = 'tiles';
-    canvas.appendChild(box);
-
-    // prepare the functions!!!
+    const coloR = () => box.style.backgroundColor = document.querySelector('.swatch').value;
     const reseT = () => box.style.backgroundColor = 'transparent';
-    const coloR = () => box.style.backgroundColor = swatch.value;
-
-    // brush behaviour
-    canvas.addEventListener('mousedown', (e) => {
-        box.addEventListener('mouseover', coloR, false);
-    })
-
-    // when i want to stop painting
-    canvas.addEventListener('mouseup', (e) => {
-        box.removeEventListener('mouseover', coloR, false);
-    });
-
-    //reset, why erase one pixel when you can erase all?!!!
-    reset.addEventListener('click', reseT, false);
+    box.className = 'tiles'; // make the tiles visible
+    canvas.appendChild(box); // add the tiles to the DOM
+    canvas.addEventListener('mousedown', (e) => box.addEventListener('mouseover', coloR, false));
+    canvas.addEventListener('mouseup', (e) => box.removeEventListener('mouseover', coloR, false));
+    document.querySelector('.reset').addEventListener('click', reseT, false);
 }

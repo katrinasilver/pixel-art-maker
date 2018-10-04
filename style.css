@@ -1,5 +1,4 @@
 body {
-    background-color: #e6e6e6;
     height: 100vh;
     line-height: 0;
 }
@@ -24,9 +23,5 @@ body {
 }
 
 .swatch {
-    margin-bottom: 1rem;
-}
-
-.button {
-    margin-left: 1rem;
+    margin: 0 1rem 1rem 0;
 }
