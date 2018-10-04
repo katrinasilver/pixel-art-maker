@@ -7,8 +7,8 @@ for (let i = 0; i < 7236; i++) {
     canvas.appendChild(box); // add the tiles to the DOM
     canvas.addEventListener('mousedown', (e) => { // start painting
         e.preventDefault() // hijack the mouse drag
-        box.addEventListener('mouseover', coloR, false)
+        box.addEventListener('mouseover', coloR)
     });
-    canvas.addEventListener('mouseup', (e) => box.removeEventListener('mouseover', coloR, false));
-    document.querySelector('.reset').addEventListener('click', reseT, false);
+    canvas.addEventListener('mouseup', (e) => box.removeEventListener('mouseover', coloR));
+    document.querySelector('.reset').addEventListener('click', reseT);
 }
